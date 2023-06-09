@@ -9,6 +9,7 @@ function submitForm(event) {
         const cep = document.getElementById('cep').value;
         const rua = document.getElementById('rua').value;
         const dataNascimento = document.getElementById('dataNascimento').value;
+        const telefone = document.getElementById('dataNascimento').value;
         const vendedor = document.getElementById('vendedor').value;
         const limiteCredito = document.getElementById('limiteCredito').value;
 
@@ -16,6 +17,12 @@ function submitForm(event) {
 
         if (!/^[a-zA-Z\s]+$/.test(nome)) {
             errorMessages.push('O nome deve conter apenas letras.');
+        }
+        if (!/^[a-zA-Z\s]+$/.test(rua)) {
+            errorMessages.push('O nome deve conter apenas letras.');
+        }
+        if (!telefone || isNaN(telefone)) {
+            errorMessages.push('O telefone deve ser somente números.');
         }
 
         if (!id || isNaN(id)) {
