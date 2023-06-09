@@ -45,6 +45,12 @@ function submitForm(event) {
         console.error(error);
     }
 }
+function validateEmail(email) {
+    const atIndex = email.indexOf('@');
+    const dotIndex = email.lastIndexOf('.');
+
+    return atIndex > 0 && dotIndex > atIndex;
+}
 
 window.onload = function() {
     const cookies = document.cookie.split(';');
