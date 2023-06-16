@@ -19,7 +19,7 @@ function submitForm(event) {
             errorMessages.push('O nome deve conter apenas letras.');
         }
         if (!/^[a-zA-Z\s]+$/.test(rua)) {
-            errorMessages.push('O campo Rua n');
+            errorMessages.push('O campo Rua não pode estar vazio.');
         }
         if (!telefone || isNaN(telefone)) {
             errorMessages.push('O telefone deve ser somente números.');
