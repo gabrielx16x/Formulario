@@ -5,7 +5,6 @@ function submitForm(event) {
         const nome = document.getElementById('nome').value;
         const id = document.getElementById('id').value;
         const tipoCliente = document.getElementById('tipoCliente').value;
-        const endereco = document.getElementById('endereco').value;
         const cep = document.getElementById('cep').value;
         const dataNascimento = document.getElementById('dataNascimento').value;
         const telefone = document.getElementById('telefone').value;
