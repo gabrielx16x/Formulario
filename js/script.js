@@ -7,9 +7,8 @@ function submitForm(event) {
         const tipoCliente = document.getElementById('tipoCliente').value;
         const endereco = document.getElementById('endereco').value;
         const cep = document.getElementById('cep').value;
-        const rua = document.getElementById('rua').value;
-        const dataNascimento = document.getElementById('telefone').value;
-        const telefone = document.getElementById('dataNascimento').value;
+        const dataNascimento = document.getElementById('dataNascimento').value;
+        const telefone = document.getElementById('telefone').value;
         const vendedor = document.getElementById('vendedor').value;
         const limiteCredito = document.getElementById('limiteCredito').value;
 
